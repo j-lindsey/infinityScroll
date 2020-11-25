@@ -1,4 +1,4 @@
-const imageContainer = document.getElementById('image-Container');
+const imageContainer = document.getElementById('image-container');
 const loader = document.getElementById('loader');
 
 let ready = false;
@@ -34,6 +34,7 @@ function displayPhotosOnSite(){
     totalImages = photosArray.length;
     // Run function for each object in photosArray
     photosArray.forEach((photo=>{
+        debugger;
         // Create <a> to link to Unsplash
         const item = document.createElement('a');
         setAttributes(item, {
